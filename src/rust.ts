@@ -1,6 +1,6 @@
 import {parser} from "lezer-rust"
-import {continuedIndent, indentNodeProp, foldNodeProp, LezerLanguage, LanguageSupport} from "@codemirror/next/language"
-import {styleTags, tags as t} from "@codemirror/next/highlight"
+import {continuedIndent, indentNodeProp, foldNodeProp, LezerLanguage, LanguageSupport} from "@codemirror/language"
+import {styleTags, tags as t} from "@codemirror/highlight"
 
 /// A syntax provider based on the [Lezer Rust
 /// parser](https://github.com/lezer-parser/rust), extended with
