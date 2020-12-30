@@ -20,18 +20,7 @@ conduct](http://contributor-covenant.org/version/1/1/0/) that applies
 to communication around the project.
 
 ## API Reference
-<dl>
-<dt id="user-content-rust">
-  <code><strong><a href="#user-content-rust">rust</a></strong>() → <a href="https://codemirror.net/6/docs/ref#language.LanguageSupport">LanguageSupport</a></code></dt>
 
-<dd><p>Rust language support</p>
-</dd>
-<dt id="user-content-rustlanguage">
-  <code><strong><a href="#user-content-rustlanguage">rustLanguage</a></strong>: <a href="https://codemirror.net/6/docs/ref#language.LezerLanguage">LezerLanguage</a></code></dt>
+@rust
 
-<dd><p>A syntax provider based on the <a href="https://github.com/lezer-parser/rust">Lezer Rust
-parser</a>, extended with
-highlighting and indentation information.</p>
-</dd>
-</dl>
-
+@rustLanguage
