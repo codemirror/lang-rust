@@ -1,5 +1,5 @@
 import {parser} from "lezer-rust"
-import {continuedIndent, indentNodeProp, foldNodeProp, LezerLanguage, LanguageSupport} from "@codemirror/language"
+import {continuedIndent, indentNodeProp, foldNodeProp, foldInside, LezerLanguage, LanguageSupport} from "@codemirror/language"
 import {styleTags, tags as t} from "@codemirror/highlight"
 
 /// A syntax provider based on the [Lezer Rust
@@ -14,7 +14,7 @@ export const rustLanguage = LezerLanguage.define({
         "Statement MatchArm": continuedIndent()
       }),
       foldNodeProp.add(type => {
-        if (/(Block|edTokens|List)$/.test(type.name)) return tree => ({from: tree.from + 1, to: tree.to - 1})
+        if (/(Block|edTokens|List)$/.test(type.name)) return foldInside
         if (type.name == "BlockComment") return tree => ({from: tree.from + 2, to: tree.to - 2})
         return undefined
       }),
