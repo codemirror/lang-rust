@@ -1,4 +1,4 @@
-import {parser} from "lezer-rust"
+import {parser} from "@lezer/rust"
 import {continuedIndent, indentNodeProp, foldNodeProp, foldInside, LezerLanguage, LanguageSupport} from "@codemirror/language"
 import {styleTags, tags as t} from "@codemirror/highlight"
 
