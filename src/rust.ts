@@ -19,7 +19,8 @@ export const rustLanguage = LRLanguage.define({
         return undefined
       }),
       styleTags({
-        "const macro_rules mod struct union enum type fn impl trait let use crate static": t.definitionKeyword,
+        "const macro_rules struct union enum type fn impl trait let static": t.definitionKeyword,
+        "mod use crate": t.moduleKeyword,
         "pub unsafe async mut extern default move": t.modifier,
         "for if else loop while match continue break return await": t.controlKeyword,
         "as in ref": t.operatorKeyword,
