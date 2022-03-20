@@ -56,7 +56,7 @@ export const rustLanguage = LRLanguage.define({
         "( )": t.paren,
         "[ ]": t.squareBracket,
         "{ }": t.brace,
-        ".": t.derefOperator,
+        ". DerefOp": t.derefOperator,
         "&": t.operator,
         ", ; ::": t.separator,
       })
