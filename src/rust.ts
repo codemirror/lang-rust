@@ -27,6 +27,7 @@ export const rustLanguage = LRLanguage.define({
         "where _ crate super dyn": t.keyword,
         "self": t.self,
         String: t.string,
+        Char: t.character,
         RawString: t.special(t.string),
         Boolean: t.bool,
         Identifier: t.variableName,
