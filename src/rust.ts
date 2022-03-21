@@ -34,6 +34,7 @@ export const rustLanguage = LRLanguage.define({
         Identifier: t.variableName,
         "CallExpression/Identifier": t.function(t.variableName),
         BoundIdentifier: t.definition(t.variableName),
+        "FunctionItem/BoundIdentifier": t.function(t.definition(t.variableName)),
         LoopLabel: t.labelName,
         FieldIdentifier: t.propertyName,
         "CallExpression/FieldExpression/FieldIdentifier": t.function(t.propertyName),
@@ -60,6 +61,7 @@ export const rustLanguage = LRLanguage.define({
         ". DerefOp": t.derefOperator,
         "&": t.operator,
         ", ; ::": t.separator,
+        "Attribute/...": t.meta,
       })
     ]
   }),
