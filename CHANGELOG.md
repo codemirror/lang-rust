@@ -1,3 +1,11 @@
+## 0.19.2 (2022-03-21)
+
+### Bug fixes
+
+Add syntax highlighting for character literals
+
+Make sure the editor doesn't indent statements with attributes before them.
+
 ## 0.19.1 (2021-08-11)
 
 ### Bug fixes
