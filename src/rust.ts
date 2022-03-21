@@ -10,7 +10,8 @@ export const rustLanguage = LRLanguage.define({
     props: [
       indentNodeProp.add({
         IfExpression: continuedIndent({except: /^\s*({|else\b)/}),
-        "String BlockComment": () => -1,
+        "String BlockComment": () => null,
+        "AttributeItem": cx => cx.continue(),
         "Statement MatchArm": continuedIndent()
       }),
       foldNodeProp.add(type => {
