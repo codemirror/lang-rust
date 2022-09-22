@@ -22,7 +22,8 @@ export const rustLanguage = LRLanguage.define({
   }),
   languageData: {
     commentTokens: {line: "//", block: {open: "/*", close: "*/"}},
-    indentOnInput: /^\s*(?:\{|\})$/
+    indentOnInput: /^\s*(?:\{|\})$/,
+    closeBrackets: {stringPrefixes: ["b", "r", "br"]}
   }
 })
 
