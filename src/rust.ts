@@ -5,6 +5,7 @@ import {continuedIndent, indentNodeProp, foldNodeProp, foldInside, LRLanguage, L
 /// parser](https://github.com/lezer-parser/rust), extended with
 /// highlighting and indentation information.
 export const rustLanguage = LRLanguage.define({
+  name: "rust",
   parser: parser.configure({
     props: [
       indentNodeProp.add({
