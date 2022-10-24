@@ -1,3 +1,9 @@
+## 6.0.1 (2022-10-24)
+
+### Bug fixes
+
+Allow prefixed strings to be closed by `closeBrackets`.
+
 ## 6.0.0 (2022-06-08)
 
 ### Breaking changes
