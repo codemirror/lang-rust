@@ -19,6 +19,19 @@ we have a [code of
 conduct](http://contributor-covenant.org/version/1/1/0/) that applies
 to communication around the project.
 
+## Usage
+
+```javascript
+import {EditorView, basicSetup} from "codemirror"
+import {rust} from "@codemirror/lang-rust"
+
+const view = new EditorView({
+  parent: document.body,
+  doc: `println!("Hello World!");`,
+  extensions: [basicSetup, rust()]
+})
+```
+
 ## API Reference
 
 @rust
