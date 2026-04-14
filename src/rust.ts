@@ -2,7 +2,7 @@ import {parser} from "@lezer/rust"
 import {continuedIndent, indentNodeProp, foldNodeProp, foldInside, LRLanguage, LanguageSupport} from "@codemirror/language"
 
 /// A syntax provider based on the [Lezer Rust
-/// parser](https://github.com/lezer-parser/rust), extended with
+/// parser](https://code.haverbeke.berlin/lezer/rust), extended with
 /// highlighting and indentation information.
 export const rustLanguage = LRLanguage.define({
   name: "rust",
